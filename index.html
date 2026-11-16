@@ -897,7 +897,7 @@ function renderLogin() {
   const g = S.loginTab === 'guru';
   root.innerHTML = `<div class="login"><div class="lcard">
     <div class="brand"><span class="logo">${ic('slash', 26)}</span><b>TEACHLOG</b></div>
-    <h2>Administrasi Guru SMP</h2><p class="sub">Teacher Administration & Activity Log By TIM IT Spenpatko</p>
+    <h2>Teacher Administration & Activity Log</h2><p class="sub"> &copy; 2026 TIM IT Spenpatko</p>
     <div class="tabs"><button class="tab ${g ? 'on' : ''}" data-act="loginTab" data-t="guru">Guru</button><button class="tab ${g ? '' : 'on'}" data-act="loginTab" data-t="admin">Admin</button></div>
     <form data-form="login" data-mode="${g ? 'guru' : 'admin'}" autocomplete="on">
       <div class="fld"><label>${g ? 'Username / ID' : 'Email Admin'}</label><input name="u" ${g ? 'type="text" autocomplete="username"' : 'type="email" autocomplete="email"'} placeholder="${g ? 'mis. guru' : 'admin@sekolah.id'}" required></div>
