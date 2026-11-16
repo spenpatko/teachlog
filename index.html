@@ -900,7 +900,7 @@ function renderLogin() {
     <h2>Teacher Administration & Activity Log</h2><p class="sub"> &copy; 2026 TIM IT Spenpatko</p>
     <div class="tabs"><button class="tab ${g ? 'on' : ''}" data-act="loginTab" data-t="guru">Guru</button><button class="tab ${g ? '' : 'on'}" data-act="loginTab" data-t="admin">Admin</button></div>
     <form data-form="login" data-mode="${g ? 'guru' : 'admin'}" autocomplete="on">
-      <div class="fld"><label>${g ? 'Username / ID' : 'Email Admin'}</label><input name="u" ${g ? 'type="text" autocomplete="username"' : 'type="email" autocomplete="email"'} placeholder="${g ? 'mis. guru' : 'admin@sekolah.id'}" required></div>
+      <div class="fld"><label>${g ? 'Username' : 'Username'}</label><input name="u" ${g ? 'type="text" autocomplete="username"' : 'type="email" autocomplete="email"'} placeholder="${g ? 'mis. guru' : 'admin@sekolah.id'}" required></div>
       <div class="fld"><label>Password</label><input name="p" type="password" autocomplete="current-password" placeholder="••••••••" required></div>
       <button class="btn pri" type="submit" style="padding:13px">Masuk</button>
     </form>
