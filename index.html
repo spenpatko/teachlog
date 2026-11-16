@@ -969,7 +969,7 @@ function renderShell() {
   const bn = bnavItems().map(([id, i, l]) => `<button data-go="${id}">${ic(i, 20)}<span>${l}</span></button>`).join('') + `<button data-act="more">${ic('more', 20)}<span>Lainnya</span></button>`;
   root.innerHTML = `<div class="shell">
   <aside class="side">
-    <div class="brand"><span class="logo">${ic('slash', 20)}</span><b>GuruKu.</b></div>
+    <div class="brand"><span class="logo">${ic('slash', 20)}</span><b>TEACHLOG</b></div>
     <nav class="nav">${nav}</nav>
     <div class="sidecard"><span class="trophy">${ic('trophy', 26)}</span><b>Tahun Ajaran</b><small>${ta ? esc(ta.tahun) + ' • ' + esc(ta.semester) : 'Belum diatur'}</small><button class="btn pri sm" data-go="pengaturan" data-tab="ta">Atur</button></div>
     <button class="logout" data-act="logout"><span class="lo-ic">${ic('out', 18)}</span>Keluar</button>
